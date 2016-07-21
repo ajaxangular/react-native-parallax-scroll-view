@@ -295,7 +295,7 @@ class ParallaxScrollView extends Component {
                     style={{
                     transform: [{
                       translateY: interpolate(scrollY, {
-                        inputRange: [0, p],
+                        inputRange: [parallaxHeaderHeight - stickyHeaderHeight - 20, p],
                         outputRange: [stickyHeaderHeight, 0],
                         extrapolate: 'clamp'
                       })
